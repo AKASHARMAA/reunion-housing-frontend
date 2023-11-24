@@ -11,7 +11,7 @@ function App() {
 
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/list-properties", { method: "GET" })
+    fetch("https://glowing-glitter-antarctopelta.glitch.me/api/list-properties", { method: "GET" })
       .then(res => res.json()).then(data => {
         console.log(data);
         setData(data);
